@@ -20,7 +20,7 @@ local icon = LibStub("LibDBIcon-1.0")
 local LDB = LibStub("LibDataBroker-1.1"):NewDataObject("AscensionDungeonTools", {
 	type = "data source",
 	text = "Ascension Dungeon Tools",
-	icon = "Interface\\AddOns\\AscensionDungeonTools\\Textures\\XinterpMinimap",
+	icon = "Interface\\AddOns\\AscensionDungeonTools\\Textures\\XinterpMinimap.blp",
 	OnClick = function(button,buttonPressed)
 		if buttonPressed == "RightButton" then
 			if db.minimap.lock then
@@ -2817,7 +2817,7 @@ function initFrames()
 	main_frame.background = main_frame:CreateTexture(nil, "BACKGROUND");
 	main_frame.background:SetAllPoints();
 	main_frame.background:SetDrawLayer("ARTWORK", 1);
-	main_frame.background:SetColorTexture(1, 1, 1, 0.5);
+	main_frame.background:SetColorTexture(0, 0, 0);
 	main_frame.background:SetAlpha(0.2)
 	main_frame:SetSize(sizex, sizey);
 	AscensionDungeonTools.main_frame = main_frame;	
